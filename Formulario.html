@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form>
+        <fieldset class="Titulo">Fale conosco</fieldset>
+        <p></p>
+        <fieldset id="usuário">
+            <legend class="cabecalho">Indentificação do usuário</legend>
+
+            <p>
+                <label for="Nome">Nome:</label>
+                <input type="text" size="30" maxlength="40" placeholder="Digite seu nome completo" title="Preencher">
+            </p>
+
+            <p>
+                <label for="Email">Email:</label>
+                <input type="email" size="30" maxlength="30" placeholder="email@provedor.com.br">
+            </p>
+
+            <p>
+                <label for="Senha">Senha:</label>
+                <input type="password" size="10" maxlength="8" placeholder="Digite a senha">
+            </p>
+
+            <p>
+                <label>Data de nacismento</label>
+                <input type="date">
+            </p>
+
+            <fieldset id="Sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="nSexo" id="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="nSexo" id="Feminino">
+                <label for="Feminino">Feminino</label>
+            </fieldset>
+        </fieldset>
+
+        <p></p>
+
+        <fieldset id="endereço">
+            <legend class="cabecalho">Endereço do Usuário</legend>
+
+            <p>
+                <label>Logradouro</label>
+                <input type="text" size="50" maxlength="50" placeholder="Rua, Avenida, etc...">
+                N°<input type="number" min="1" max="9999">
+            </p>
+
+            <p>
+                <label for="nEstado">Estado</label>
+                <select name="nEstado" id="Estado">
+                    <optgroup label="Região, Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+
+                    <optgroup label="Região, Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RG">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p></p>
+
+            <p>
+                <label for="Cidade">Cidade</label>
+                <input type="text" list="cidades" id="cidades" size="40" maxlength="40" placeholder="Sua cidade">
+                <datalist id="Cidades">
+                    <option>Paraty</option>
+                    <option>Buzios</option>
+                    <option>Guaratinguetá</option>
+                    <option>Aparecida</option>
+                </datalist>
+            </p>
+        </fieldset>
+
+        <p></p>
+
+        <fieldset id="menssagem">
+            <legend class="cabecalho">Mensagem do Usuário</legend>
+            <p></p>
+            <label for="Urgencia">Grau de Urgência:</label>
+            Min 2<input type="range" min="2" max="10" stop="2">Max 10
+            <p>
+                <label for="Menssagem">Menssagens:</label><br>
+                <textarea name="nMenssagem" id="Menssagem" cols="80" rows="15">
+                </textarea>
+            </p>
+        </fieldset>
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
